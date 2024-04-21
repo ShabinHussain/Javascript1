@@ -14,7 +14,7 @@ console.log(typeof(arr));
 console.log(typeof(employee));
 console.log(arr[2]);
 //different method to access values stored in a key
-console.log(employee['desg']);
+console.log(employee['name']);
 console.log(employee.name);
 
 //how to access a key from a object
