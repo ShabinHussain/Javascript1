@@ -10,6 +10,6 @@ console.log(even);
 b=a.filter(num=>num>13)
 console.log(b);
 
-//w.a.p to check is there any number greter than 13 exist in the given array
+//w.a.p to check is there any number greater than 13 exist in the given array
 c=a.some(num=>num>13)
 console.log(c?'yes':'no');

@@ -82,6 +82,6 @@ console.log(`----------------------------------------`);
 
 //10. print all products in the range of 10 to 30
 console.log(`print all products in the range of 10 to 30`);
-products.filter(pro=>pro[2]>+10 && pro[2]<=30).forEach(item=>console.log(item[1]));
+products.filter(pro=>pro[2]>=10 && pro[2]<=30).forEach(item=>console.log(item[1]));
 
 console.log(`----------------------------------------`);

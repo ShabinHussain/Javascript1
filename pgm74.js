@@ -1,11 +1,11 @@
 array = [10,20,30,40,30,20,50,30,60,70,10,40,80]
 //w.a.p to find the number count from the given array. and display as an object
 
-words = array.split(' ')
-console.log(words);
+/*words = array.split(' ')
+console.log(words);*/
 
 obj={}
-for(word of words){
+for(word of array){
     if(word in obj){
         obj[word]+=1
     }
@@ -14,3 +14,8 @@ for(word of words){
     }
 }
 console.log(obj);
+
+
+//array.forEach(item=>item in obj?obj[item]+=1:obj[item=1])
+
+//console.log(obj);

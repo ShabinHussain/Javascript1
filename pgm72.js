@@ -11,14 +11,14 @@ console.log(`model is ${car['model']} and manufacturer is ${car['manufacturer']}
 console.log('-----------------------------------------------');
 
 
-//w.a.p add variant key to the car object with value has 'maruti'
-car['varient']=['manual']
+//w.a.p add variant key to the car object with value has 'manual'
+car['variant']=['manual']
 console.log(car);
 console.log('-----------------------------------------------');
 
 
-//w.a.p to add a new value 'automatic' to the key varient
-car.varient.push('automatic')
+//w.a.p to add a new value 'automatic' to the key variant
+car.variant.push('automatic')
 console.log(car);
 console.log('-----------------------------------------------');
 

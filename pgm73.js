@@ -10,6 +10,7 @@ text = 'hai hello all hello world all'
 
 words = text.split(' ')
 console.log(words);
+
 //2)create a new empty obj
 obj={}
 //3)fetch each words from the array

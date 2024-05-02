@@ -1,5 +1,5 @@
-//w.ap to print pairs whose sum is 6
-b=[2,3,4,5] //2,4
+//w.ap to print pairs whose sum is 7
+b=[2,3,4,5] //2,5     3,4
 
 
 psum=7

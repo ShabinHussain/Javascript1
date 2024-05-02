@@ -43,7 +43,7 @@ console.log('------------------------------');
 console.log(`emplocation key is ${`emplocation` in employee?`present`:`not present`}`);
 
 //how to add a key"value pair into an object
-//objectname["key"]==value
+//objectname["key"]=value
 
 
 //add expeience to the given object employee
@@ -75,7 +75,7 @@ console.log('------------------------------');
 
 //update a value in an object
 
-employee.age+=5
+employee.age=45
 console.log(employee);
 console.log('------------------------------');
 

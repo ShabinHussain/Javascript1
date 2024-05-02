@@ -117,3 +117,6 @@ console.log(`total salary expense of the company`);
 totalEx = employee.map(emp=>emp[4]).reduce((sal1,sal2)=>sal1+sal2)
 console.log(totalEx);
 
+
+
+
