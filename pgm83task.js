@@ -44,8 +44,12 @@ console.log('--------------------------------------------------');
 
 //6) Use reduceRight to concatenate all nested arrays in reverse order.
 
-//console.log('Use reduceRight to concatenate all nested arrays in reverse order.');
-//reverse = reduceRight()
+  console.log('Use reduceRight to concatenate all nested arrays in reverse order.');
+  reverse = data.reduceRight((item1, item2) =>item1.concat(item2));
+  console.log(reverse);
+
+  console.log('--------------------------------------------------');
+
 
 //7) create a flattened array from the nested arrays.
 console.log('flattened array from the nested arrays.');
@@ -80,16 +84,26 @@ console.log('--------------------------------------------------');
 
 
 //11) Sort the nested arrays based on the sum of their numbers.
-//console.log('Sort the nested arrays based on the sum of their numbers.');
+ console.log('Sort the nested arrays based on the sum of their numbers.');
+ sortedarray = data.slice().sort((a,b) => a.reduce((item1,item2) => item1+item2) - b.reduce((item1,item2) => item1+item2))
+ console.log(sortedarray);
+
+ console.log('--------------------------------------------------');
+
 
 //12) Use map to get the product of the first and last number in each nested array.
-//console.log('Use map to get the product of the first and last number in each nested array.');
-//c = data.map((item1,item2)=>item[0][0]
+console.log('Use map to get the product of the first and last number in each nested array.');
+product = data.map(item => item[0] * item[2])
+console.log(product);
+
+console.log('--------------------------------------------------');
 
 
 //13) Use filter to get all arrays where the sum of numbers is greater than 15.
+console.log('Use filter to get all arrays where the sum of numbers is greater than 15.');
+data.filter(item => item.reduce((item1,item2)=>item1+item2)>15).forEach(items=>console.log(items));
 
-
+ console.log('--------------------------------------------------');
 
 
 
@@ -120,15 +134,34 @@ console.log('--------------------------------------------------');
 
 
 //17) Use map to convert each number in the nested arrays to its string representation.
-//console.log(' Use map to convert each number in the nested arrays to its string representation.');
+  console.log(' Use map to convert each number in the nested arrays to its string representation.');
+  data.map(item => item.map(num => num.toString())).forEach(items=>console.log(items))
 
-//console.log('--------------------------------------------------');
+  console.log('--------------------------------------------------');
 
 
 
 //18) Use filter to get all arrays where the length is greater than 2
+console.log('Use filter to get all arrays where the length is greater than 2');
+z = data.filter(item => item.length > 2)
+console.log(z);
+
+
+
+
+console.log('--------------------------------------------------');
+
 
 //19) Use reduceRight to flatten and concatenate all nested arrays in reverse order.
+console.log('Use reduceRight to flatten and concatenate all nested arrays in reverse order.');
+flattenreverse = data.reduceRight((item1,item2) => item1.concat(item2))
+console.log(flattenreverse);
+
+
+
+
+console.log('--------------------------------------------------');
+
 
  //20) Use arrayFrom to create an array of squares of all even numbers in the nested arrays.
  console.log('Use arrayFrom to create an array of squares of all even numbers in the nested arrays.');
@@ -141,14 +174,66 @@ console.log(sq);
 
 
 //21) Sort the nested arrays based on the length of each array.
+console.log('Sort the nested arrays based on the length of each array.');
+sortedByLength = data.slice().sort((a, b) => a.length - b.length);
+console.log(sortedByLength);
+
+
+
+
+console.log('--------------------------------------------------');
+
 
 //22) Use map to convert each number in the nested arrays to its negative.
+console.log('Use map to convert each number in the nested arrays to its negative.');
+negatives = data.map(item => item.map(num => -num))
+console.log(negatives);
+
+
+console.log('--------------------------------------------------');
+
 
 //23) Use filter to get all arrays where the last number is greater than 10.
+console.log('Use filter to get all arrays where the last number is greater than 10.');
+lastnum = data.filter(item => item[2]>10)
+console.log(lastnum);
+
+
+
+console.log('--------------------------------------------------');
+
 
  //24) Use reduceRight to get the difference between consecutive numbers in each nested array.
 
+ console.log('Use reduceRight to get the difference between consecutive numbers in each nested array.');
+ 
+differences = data.map(arr => {
+  return arr.reduceRight((acc, curr, index, array) => {
+    if (index !== 0) {
+      acc.unshift(array[index - 1] - curr);
+    }
+    return acc;
+  }, []);
+});
+
+console.log(differences);
+
+
+
+
+ console.log('--------------------------------------------------');
+
+
 //25) Use arrayFrom to create an array of square roots of all even numbers in the nested arrays.
+console.log('Use arrayFrom to create an array of square roots of all even numbers in the nested arrays.');
+sqrroots = Array.from(data.flat().filter(num=>num%2==0), num=>Math.sqrt(num))
+console.log(sqrroots);
+
+
+
+
+console.log('--------------------------------------------------');
+
 
  //26) Use includes to check if the number 15 is present in any of the nested arrays.
  console.log('Use includes to check if the number 15 is present in any of the nested arrays.');
@@ -156,15 +241,33 @@ console.log(sq);
  fifteen = data.flat().includes(15)
  console.log(fifteen?'yes':'no');
 
- console.log('--------------------------------------------------');
+  console.log('--------------------------------------------------');
 
 
 
 //27) Use map to convert each number in the nested arrays to its absolute value.
+console.log('Use map to convert each number in the nested arrays to its absolute value.');
+absltvalue = data.map(num => num.map(item => Math.abs(item)))
+console.log(absltvalue);
+
+console.log('--------------------------------------------------');
+
 
 //28) Use filter to get all arrays where the first number is less than 5.
+console.log('Use filter to get all arrays where the first number is less than 5.');
+firstlessthan5 = data.filter(item => item[0]<5)
+console.log(firstlessthan5);
+
+console.log('--------------------------------------------------');
+
 
 //29) Use reduceRight to concatenate and flatten all nested arrays in reverse order.
+console.log('Use reduceRight to concatenate and flatten all nested arrays in reverse order.');
+freverse = data.reduceRight((item1,item2) => item1.concat(item2))
+console.log(freverse);
+
+console.log('--------------------------------------------------');
+
 
 //30) Use arrayFrom to create an array of numbers greater than 5 from the nested arrays.
 console.log('Use arrayFrom to create an array of numbers greater than 5 from the nested arrays.');
