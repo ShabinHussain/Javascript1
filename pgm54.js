@@ -17,16 +17,6 @@ employee =[
 
 
 
-
-// print details of employee Laisha
-
-
-
-
-
-// print the employ name whose have the higest salary
-
-
 //print all employee name
 console.log(`employee name is:`);
 for(let emp of employee){

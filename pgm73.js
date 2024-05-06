@@ -29,6 +29,9 @@ obj[word]=1
 //display the object
 console.log(obj);
 console.log(`---------------------------------------`);
+
+
+
 //array method
 wc={}
 text.split(' ').forEach(item => item in wc?wc[item]+=1:wc[item]=1);

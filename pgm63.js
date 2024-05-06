@@ -83,6 +83,9 @@ console.log(tcuc);
 console.log(`----------------------------------------------------------`);
 
 
+
+
+
 //10. Print curred cases in Idukki
 console.log(`Print curred cases in Idukki`);
 idukki=covid_data.find(dis=>dis[1]=='Idukki')

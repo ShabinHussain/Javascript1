@@ -28,4 +28,4 @@ pal=''
 for(i=str.length-1;i>=0;i--){
     pal += str[i]
 }
-console.log(str=pal?'palindrome':'not palindrome');
+console.log(str==pal?'palindrome':'not palindrome');

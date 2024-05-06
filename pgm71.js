@@ -67,7 +67,7 @@ else{
 
 
 console.log('------------------------------');
-'gender' in employee? console.log('yes'):(employee['gender']='main',console.log(employee));
+'gender' in employee? console.log('yes'):(employee['gender']='male',console.log(employee));
 
 
 console.log('------------------------------');

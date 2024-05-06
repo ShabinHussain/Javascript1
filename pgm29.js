@@ -8,9 +8,9 @@
 //w.a.p to print the given pattern
 
 for(row=1;row<=4;row++){
-str=``
+str=''
 for(col=1;col<=4;col++){
-    str=str+`#`
+    str=str+'#'
 }
 console.log(str);
 }
@@ -102,10 +102,6 @@ for(row=1;row<=4;row++){
 console.log('******************************************************');
 
 
-//* * * *
-//* * * 
-//* * 
-//* 
 
 
 
