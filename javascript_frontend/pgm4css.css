@@ -1,0 +1,33 @@
+.div0{
+    text-align: center;
+    
+}
+
+
+.div1{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.row1{
+    width: 450px;
+    margin-left: 25px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: end;
+
+}
+
+.row2{
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.bn{
+    width: 50px;
+}
