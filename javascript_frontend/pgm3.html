@@ -26,6 +26,7 @@
 
 
         </div>
+        <p class="mt-3" id="result"></p>
         </form>
         </div>
         <div class="col-md-4"></div>
@@ -46,14 +47,29 @@
 <script>
     function check(){
         /*console.log(age.value);*/
+
+      if(age.value){  
         if(age.value>=18){
-            alert('eligible to vote')
-            
+            result.innerHTML = 'Eligible to vote'
+            result.style.color = 'green'
+
+        }
+        else if(age.value<18){
+            result.innerHTML = 'Ineligible to vote'
+            result.style.color = 'red'
+
         }
         else{
-            alert('not eligible to vote')
+            result.innerHTML = 'Please enter a valid input'
+ 
         }
     }
+        else{
+            result.innerHTML = 'Please fill the form completely'
+            result.style.color = 'blue'
+        }
+    }
+    
 
 </script>
 </html>
