@@ -22,7 +22,7 @@
 
             
             <div>
-                <span class="text-light fs-4 me-3"><i class="fa-solid fa-power-off me-2"></i>Logout</span>
+                <span class="text-light fs-4 me-3" onclick="logout()"><i class="fa-solid fa-power-off me-2"></i>Logout</span>
 
 
             </div>
@@ -35,7 +35,7 @@
 
 
     <div>
-        <h1 class="mt-5 text-center">Welcome <span class="text-danger">User</span></h1>
+        <h1 class="mt-5 text-center">Welcome <span class="text-danger" id="username">User</span></h1>
         <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ipsum sapiente error libero hic aut ad debitis cumque, sed fuga praesentium id animi perspiciatis reprehenderit optio neque, iure iusto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas corporis iste quos laborum tenetur at beatae natus distinctio, fuga officia. Repellat incidunt tenetur temporibus dolorem facilis iusto eius cumque molestias.</p>
 
         
@@ -43,4 +43,20 @@
     </div>
     
 </body>
+<script>
+    let user = localStorage.getItem("user")
+    /*console.log(user);*/
+    if(!user){
+        window.location = 'login.html'
+    }
+    else{
+        username.innerHTML =user
+    }
+
+
+    function logout(){
+        localStorage.removeItem("user")
+        window.location = "login.html"
+    }
+</script>
 </html>
